@@ -21,3 +21,23 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+
+# Dist folder
+./dist/**
+./node_modules/**
+./package-lock.json **/package-lock.json
+
+# .env file
+.env        
+# .env.local file
+.env.local
+# .env.development.local file
+.env.development.local
+# .env.test.local file
+.env.test.local
+# .env.production.local file
+.env.production.local
+# .env.development file
+.env.development
+# .env.test file
+.env.test   
