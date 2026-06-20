@@ -1,43 +1,23 @@
-### AL ###
-#Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
+# Dependencies & build
+node_modules/
+dist/
+package-lock.json
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# IDE / editor
 .vscode/
-#Cache folder
-.alcache/
-#Symbols folder
-.alpackages/
-#Snapshots folder
-.snapshots/
-#Testing Output folder
-.output/
-#Extension App-file
-*.app
-#Rapid Application Development File
-rad.json
-#Translation Base-file
-*.g.xlf
-#License-files
-*.bclicense
-*.flf
-#Test results file
-TestResults.xml
 
-# Dist folder
-./dist
-./node_modules
-./package-lock.json **/package-lock.json
+# OS
+.DS_Store
+Thumbs.db
 
-# .env file
-.env        
-# .env.local file
-.env.local
-# .env.development.local file
-.env.development.local
-# .env.test.local file
-.env.test.local
-# .env.production.local file
-.env.production.local
-# .env.development file
-.env.development
-# .env.test file
-.env.test   
+# Logs
+*.log
+npm-debug.log*
+
+# Setup backups (if ever created in repo)
+*.bak.*

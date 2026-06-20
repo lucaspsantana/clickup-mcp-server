@@ -1,0 +1,29 @@
+{
+  "name": "clickup-custom-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "clickup-custom-mcp": "dist/index.js",
+    "clickup-mcp-setup": "scripts/setup-global.mjs"
+  },
+  "files": ["dist", "scripts/setup-global.mjs"],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "setup": "node scripts/setup-global.mjs",
+    "setup:global": "node scripts/setup-global.mjs",
+    "start": "node dist/index.js"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "axios": "^1.8.4",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.16",
+    "typescript": "^5.3.3"
+  }
+}
