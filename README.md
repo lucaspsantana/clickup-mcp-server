@@ -9,7 +9,7 @@ Diferente do MCP oficial do ClickUp (`https://mcp.clickup.com/mcp`, OAuth), este
 ## Início rápido
 
 ```bash
-git clone <url-do-seu-repo> ~/mcp-servers/clickup-mcp-server
+git clone git@github.com:lucaspsantana/clickup-mcp-server.git ~/mcp-servers/clickup-mcp-server
 cd ~/mcp-servers/clickup-mcp-server
 npm install
 cp .env.example .env   # edite com suas credenciais
